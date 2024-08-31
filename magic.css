@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 a.shop-name {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header h1 a.shop-name:hover {
+    color: #ddd;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #444;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+#details {
+    padding: 20px;
+    text-align: center;
+}
+
+.brand-details {
+    display: none;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.brand-details h2 {
+    margin-top: 0;
+}
+
+.brand-details h3 {
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.brand-details p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.brand-details hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.buy-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
+}
+
+.thank-you {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.thank-you h2 {
+    color: green;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+#brand1:target, #brand2:target, #brand3:target, #brand4:target, #brand5:target {
+    display: block;
+}
+
+#thanks:target {
+    display: block;
+}
+
+#thanks:target ~ #details {
+    display: none;
+}
+
+#home:target ~ #details .brand-details {
+    display: none;
+}
+
+.background-image {
+    width: 1683px;
+    height: 620px; 
+    background-image: url('Images/backkkk.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media (min-width: 600px) {
+    nav ul li {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 599px) {
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #details {
+        padding: 10px;
+    }
+}
